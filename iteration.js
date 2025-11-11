@@ -126,103 +126,103 @@
 
 // console.log(filteredOrders)
 
-// ===================== 1. MAP — double all numbers =====================
+// // ===================== 1. MAP — double all numbers =====================
 
-const nums1 = [1, 2, 3, 4];
-/* TODO: use .map to create [2, 4, 6, 8] */
-console.log(nums1.map((num) => num * 2));
+// const nums1 = [1, 2, 3, 4];
+// /* TODO: use .map to create [2, 4, 6, 8] */
+// console.log(nums1.map((num) => num * 2));
 
-// ===================== 2. MAP — return only string lengths =====================
+// // ===================== 2. MAP — return only string lengths =====================
 
-const words1 = ["apple", "hi", "notebook"];
-/* TODO: use .map to get [5, 2, 8] */
-console.log(words1.map((word) => word.length));
+// const words1 = ["apple", "hi", "notebook"];
+// /* TODO: use .map to get [5, 2, 8] */
+// console.log(words1.map((word) => word.length));
 
-// ===================== 3. FOR EACH — just log each item =====================
+// // ===================== 3. FOR EACH — just log each item =====================
 
-const movies = ["Inception", "Avatar", "Dune"];
-/* TODO: use .forEach to console.log each movie */
-movies.forEach((movieName) => console.log(movieName));
+// const movies = ["Inception", "Avatar", "Dune"];
+// /* TODO: use .forEach to console.log each movie */
+// movies.forEach((movieName) => console.log(movieName));
 
-// ===================== 4. FILTER — keep only even numbers =====================
+// // ===================== 4. FILTER — keep only even numbers =====================
 
-const nums2 = [3, 8, 11, 2, 9, 4];
-/* TODO: use .filter to get [8, 2, 4] */
-const nums = nums2.filter((nums) => nums % 2 == 0);
-// console.log(nums);
+// const nums2 = [3, 8, 11, 2, 9, 4];
+// /* TODO: use .filter to get [8, 2, 4] */
+// const nums = nums2.filter((nums) => nums % 2 == 0);
+// // console.log(nums);
 
-// ===================== 5. FILTER — words longer than 4 letters =====================
+// // ===================== 5. FILTER — words longer than 4 letters =====================
 
-const words2 = ["cat", "giraffe", "sun", "planet"];
-/* TODO: use .filter to get ["giraffe", "planet"] */
-const longwords = words2.filter((words) => words.length >= 4);
-console.log(longwords);
+// const words2 = ["cat", "giraffe", "sun", "planet"];
+// /* TODO: use .filter to get ["giraffe", "planet"] */
+// const longwords = words2.filter((words) => words.length >= 4);
+// console.log(longwords);
 
-// ===================== 6. FIND — first number > 10 =====================
+// // ===================== 6. FIND — first number > 10 =====================
 
-const nums3 = [4, 9, 15, 8, 22];
-/* TODO: use .find to return 15 */
-const found = nums3.find((number)=> number >10);
-console.log(found)
+// const nums3 = [4, 9, 15, 8, 22];
+// /* TODO: use .find to return 15 */
+// const found = nums3.find((number)=> number >10);
+// console.log(found)
 
-// ===================== 7. FIND — first string that includes "dog" =====================
+// // ===================== 7. FIND — first string that includes "dog" =====================
 
-const phrases = ["hotdog", "cat lover", "dog park", "bird"];
-/* TODO: use .find to return "hotdog" */
-const foun = phrases.find((dog)=> dog.includes("dog"));
-console.log(found)
+// const phrases = ["hotdog", "cat lover", "dog park", "bird"];
+// /* TODO: use .find to return "hotdog" */
+// const foun = phrases.find((dog)=> dog.includes("dog"));
+// console.log(found)
 
-// ===================== 8. MAP + TEMPLATE — turn names into greetings =====================
+// // ===================== 8. MAP + TEMPLATE — turn names into greetings =====================
 
-const names = ["Alice", "Bob", "Charlie"];
-/* TODO: use .map to output ["Hello Alice", "Hello Bob", ...] */
-console.log(names.map((name)=>"Hello " + name));
+// const names = ["Alice", "Bob", "Charlie"];
+// /* TODO: use .map to output ["Hello Alice", "Hello Bob", ...] */
+// console.log(names.map((name)=>"Hello " + name));
 
-// ===================== 9. FILTER + MAP — adults' names only =====================
+// // ===================== 9. FILTER + MAP — adults' names only =====================
 
-const people = [
-  { name: "Mia", age: 17 },
-  { name: "John", age: 21 },
-  { name: "Sara", age: 25 },
-];
-/* TODO:
-1) filter only people age 18+
-2) then .map to return just their names
-*/
+// const people = [
+//   { name: "Mia", age: 17 },
+//   { name: "John", age: 21 },
+//   { name: "Sara", age: 25 },
+// ];
+// /* TODO:
+// 1) filter only people age 18+
+// 2) then .map to return just their names
+// */
 
-let adults = people.filter((adult)=> adult.age > 18)
-const adultNames= adults.map((adultA)=> adultA.name)
-console.log(adultNames)
+// let adults = people.filter((adult)=> adult.age > 18)
+// const adultNames= adults.map((adultA)=> adultA.name)
+// console.log(adultNames)
 
-// ===================== 10. FOR EACH — total up numbers manually =====================
+// // ===================== 10. FOR EACH — total up numbers manually =====================
 
-const prices = [5, 10, 3];
-let total = 0;
-/* TODO: use .forEach to sum into total, then console.log(total) */
-prices.forEach((sum)=> total = total + sum);
-console.log(total)
+// const prices = [5, 10, 3];
+// let total = 0;
+// /* TODO: use .forEach to sum into total, then console.log(total) */
+// prices.forEach((sum)=> total = total + sum);
+// console.log(total)
 
 // ===================== 1. MAP — add fullName property to users =====================
-const users1 = [
-  { first: "John", last: "Doe" },
-  { first: "Jane", last: "Smith" }
-];
+// const users1 = [
+//   { first: "John", last: "Doe" },
+//   { first: "Jane", last: "Smith" },
+// ];
 
-/* TODO: use map to return a new array where each object gains a fullName like "John Doe" */
-const fullName = users1.map((users1)=> users1.first + " " + users1.last)
-console.log(fullName)
+// /* TODO: use map to return a new array where each object gains a fullName like "John Doe" */
+// const fullName = users1.map((users1) => users1.first + " " + users1.last);
+// console.log(fullName);
 
 // ===================== 2. FILTER — get products in stock & price > 20 =====================
 
-const products = [
-  { name: "Keyboard", price: 30, inStock: true },
-  { name: "Mouse", price: 15, inStock: true },
-  { name: "Laptop", price: 900, inStock: false }
-];
-/* TODO: use filter to return only products that are inStock and price > 20 */
-let pro = products.filter((product)=>product.inStock ==true)
-let pro2 = pro.filter((product1)=>product1.price > 20)
-console.log(pro2)
+// const products = [
+//   { name: "Keyboard", price: 30, inStock: true },
+//   { name: "Mouse", price: 15, inStock: true },
+//   { name: "Laptop", price: 900, inStock: false },
+// ];
+// /* TODO: use filter to return only products that are inStock and price > 20 */
+// let pro = products.filter((product) => product.inStock == true);
+// let pro2 = pro.filter((product1) => product1.price > 20);
+// console.log(pro2);
 
 // ===================== 3. FIND — get first student with grade A =====================
 
@@ -298,47 +298,264 @@ console.log(pro2)
 // ===========================================
 // 1. Print even numbers from 2 to 20 using a while loop
 // ===========================================
-
+// for (i = 2; i <= 20; i = i + 2) {
+//   console.log(i);
+// }
 // ===========================================
 // 2. Print the multiplication table of 5 using a for loop
 // ===========================================
-
+// for (let a = 1; a <= 10; a++) {
+//   console.log(`5x${a}=${a * 5}`);
+// }
 // ===========================================
 // 3. Sum numbers from 1 to 100 using a while loop
 // ===========================================
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   sum += i;
+// }
+// console.log(sum);
 
 // ===========================================
 // 4. Print all elements of an array using a for loop
-// Example array: const fruits = ["apple", "banana", "cherry", "date"];
 // ===========================================
-
+// const fruits = ["apple", "banana", "cherry", "date"];
+// for (let i = 0; i <= fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
 // ===========================================
 // 5. Find the largest number in an array using a for loop
-// Example array: const numbers = [12, 45, 67, 23, 89, 34];
 // ===========================================
+// const numbers = [12, 45, 67, 23, 89, 34];
+// let max = 0;
 
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] > max) {
+//     max = numbers[i];
+//   }
+// }
+// console.log(max);
 // ===========================================
 // 6. Reverse an array using a while loop
-// Example array: const arr = [1, 2, 3, 4, 5];
 // ===========================================
-
+// const arr = [1, 2, 3, 4, 5];
+// console.log(arr.reverse());
 // ===========================================
 // 7. Count down from 10 to 1 using a for loop
 // ===========================================
-
+// for (let i = 10; i >= 1; i--) {
+//   console.log(i);
+// }
 // ===========================================
 // 8. Print only odd numbers between 1 and 20 using a while loop
 // ===========================================
-
+// for (i = 1; i <= 20; i = i + 2) {
+//   console.log(i);
+// }
 // ===========================================
 // 9. Calculate the factorial of a number using a for loop
 // Example: let num = 5;
 // ===========================================
-
+// let factorial = 1;
+// for (let i = 1; i <= 5; i++) {
+//   factorial *= i;
+// }
+// console.log(factorial);
 // ===========================================
 // 10. Print each character of a string using a for loop
-// Example: let word = "JavaScript";
 // ===========================================
-
+// let word = "JavaScript";
+// for (let i = 0; i < word.length; i++) {
+//   console.log(word[i]);
+// }
 // ===========================================
 // 11. Keep asking for user input until they type "stop" (while loop)
+// let input = "";
+// while (input.toLowerCase() !== "stop") {
+//   input = window.prompt("Entering something (type 'stop' to end):");
+// }
+// console.log("Program ended.");
+//
+
+///
+//
+//
+//
+///
+
+///
+///
+//
+// 1 Sum Until Negative
+// const numbers = [4, 7, 10, -3, 6, 9];
+
+// let sum = 0;
+// for (let x = 0; 0 < numbers.length; x++) {
+//   if (numbers[x] < 0) {
+//     break;
+//   } else {
+//     sum += numbers[x];
+//   }
+// }
+// console.log("exercise1", sum);
+
+// 2 Count True Value Indexes
+// const bools = [true, false, true, true, false, false, true];
+
+// let i = 0;
+// let count = 0;
+// while (i < bools.length) {
+//   if (bools[i]) {
+//     count = count + 1;
+//   }
+//   i++;
+// }
+// console.log(count);
+
+// 3 Reverse Array (Manually)
+// const arr = [1, 2, 3, 4, 5];
+// const arrRevered = [];
+
+// for (let x = 0; x < arr.length; x++) {
+// //   console.log(arr.length - x - 1);
+//   arrRevered.push(arr[arr.length - x - 1]);
+// }
+// console.log(arrRevered);
+
+// 4 Students Above Threshold (>= 65)
+// const students = [
+//   { name: "Alice", score: 85 },
+//   { name: "Bob", score: 58 },
+//   { name: "Charlie", score: 90 },
+// ];
+// const list = [];
+// let i = 0;
+// for (let i = 0; i < students.length; i++) {
+//   if (students[i].score >= 65) {
+//     list.push(students[i].name);
+//   }
+// }
+
+// console.log(list);
+// 5 Total Price Calculator
+// const cart = [
+//   { name: "Apple", price: 2, quantity: 3 },
+//   { name: "Banana", price: 1, quantity: 5 },
+// ];
+
+// let totalPrice = 0;
+// let i = 0;
+// for (let i = 0; i < cart.length; i++) {
+//   totalPrice = totalPrice + cart[i].price * cart[i].quantity;
+// }
+// console.log("Total Price", totalPrice);
+// 6 Average Age Calculator
+// let averageAge = 0;
+// const people = [
+//   { name: "Tom", age: 20 },
+//   { name: "Jerry", age: 25 },
+//   { name: "Spike", age: 30 },
+// ];
+
+// for (let i = 0; i < people.length; i++) {
+//   averageAge += people[i].age;
+// }
+// console.log(averageAge / people.length);
+// 7 Remove Duplicates
+// const dupArr = [1, 2, 2, 3, 4, 4, 5];
+// const arr0 = [];
+// for (let a = 0; a < dupArr.length; a++) {
+//   if (!arr0.includes(dupArr[a])) {
+//     arr0.push(dupArr[a]);
+//   }
+// }
+// console.log(arr0);
+
+// 8 Longest Word
+// const sentence = "JavaScript is awesome hjcvndfgfdgbij fbvi fj and powerful";
+// const splitArr = sentence.split(" ");
+// let maxWordIndex = 0;
+// console.log(splitArr);
+// for (let x = 0; x < splitArr.length; x++) {
+//   if (splitArr[maxWordIndex].length < splitArr[x].length) {
+//     maxWordIndex = x;
+//   }
+// }
+// console.log(splitArr[maxWordIndex]);
+
+// 9 Find Most Expensive Product
+// const products = [
+//   { name: "Laptop", price: 1000 },
+//   { name: "Mouse", price: 25 },
+//   { name: "Phone", price: 700 },
+//   { name: "Phone", price: 2999 },
+// ];
+// let maxPrice = 0;
+// let cost = 0;
+// for (let i = 0; i < products.length; i++) {
+//   if (products[i].price > maxPrice) {
+//     maxPrice = products[i].price;
+//     cost = i;
+//   }
+// }
+// console.log(products[cost].price);
+//
+//
+//
+//
+//
+//
+//
+//
+// //1
+// const car = {
+//   brand: "Toyota",
+//   model: "Harrier",
+//   year: 2024,
+// };
+// console.log(car);
+
+// //2
+// const person = {
+//   firstName: "Gantulga",
+//   lastName: "Odonbymbaa",
+//   age: "20",
+// };
+// delete person.age;
+// person.city = "Monoglian";
+// person.position = "..";
+// person.isMarried = false;
+// console.log(person);
+
+// //5
+// const address = {
+//   street: "Hudag",
+//   city: "UB",
+//   zipCode: "14000",
+// };
+// const student = {
+//   name: "Gantulga",
+//   age: "20",
+//   address: address,
+// };
+// console.log(student.address.zipCode);
+
+//8
+// const config = {
+//   host: "host",
+//   port: "port",
+//   protocol: "protocol",
+// };
+// Object.freeze(config);
+// config.host = "frozen";
+// console.log(config);
+// //
+// const config = {
+//   host: "host",
+//   port: "port",
+//   protocol: "protocol",
+// };
+// Object.seal(config);
+// config.host = "host";
+// delete config.port;
+// console.log(config);

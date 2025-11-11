@@ -11,10 +11,10 @@ console.log(animals);
 const books = ["1984", "Brave New World", "Fahrenheint 451"];
 books.push("Time Management", "Ikigai");
 console.log(books);
-// //4
+//4
 const numbers = [10, 20, 30, 40, 50];
 console.log(numbers.indexOf(30));
-5;
+//5
 const fruits = ["apple", "banana", "cherry", "grape"];
 fruits.splice(0, 1, "a", "b", "c", "d");
 console.log(fruits);
